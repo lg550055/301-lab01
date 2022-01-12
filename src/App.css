@@ -1,22 +1,40 @@
-* {
+body {
   background-color: darkslategray;
   text-align: center;
   color: azure;
 }
 
+header {
+  padding: 2vh 0;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
 main > div {
   display: inline-block;
-  border: 0.5vh solid aquamarine;
-  margin: 2vh;
-  padding: 0 2vh;
+  border: 0.4vh solid aquamarine;
+  margin: 1vh;
+  padding: 2vh 1vh 0;
 }
 
 img {
   max-height: 18vh;
+  max-width: 280px;
+  margin: 2vh 0;
 }
 
 footer {
   margin-top: 2vh;
   padding: 3vh;
   background-color: gray;
+}
+
+h2 {
+  padding: 0 2vh;
+  font-size: 2.5vh;
 }
