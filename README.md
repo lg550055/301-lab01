@@ -2,16 +2,27 @@
 
 Responsive React app that displays the title, image and description of Horned creatures.
 
-Use may click on an image to like a creature.  Cummulative number of likes gets updated in state.
+User may click on an image to like a creature.  Cummulative number of likes gets updated in state.
 
 ---
 
 ### Collaborators
 
-Polo Gonzalez
+Polo Gonzalez - author
+Riva Davidowski - TA
+
+---
 
 #### Time estimate vs actual to implement each feature
 
+##### Lab 03
+Number and name of feature: #1 Display Modal
+Estimate of time needed to complete: 100 min
+Start time: 3.20pm
+Finish time: 0:40pm
+Actual time needed to complete: XX min
+
+##### Lab 02
 Number and name of feature: #1 Display images
 Estimate of time needed to complete: 15 min
 Start time: 8pm
