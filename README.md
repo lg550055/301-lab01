@@ -19,8 +19,8 @@ Riva Davidowski - TA
 Number and name of feature: #1 Display Modal
 Estimate of time needed to complete: 100 min
 Start time: 3.20pm
-Finish time: 0:40pm
-Actual time needed to complete: XX min
+Finish time: 6:00pm
+Actual time needed to complete: 160 min
 
 ##### Lab 02
 Number and name of feature: #1 Display images

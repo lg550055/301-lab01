@@ -33,7 +33,7 @@ class HornedBeast extends React.Component{
           src={this.props.image_url}
           alt={this.props.keyword}
           title={this.props.title}
-          onClick={() => this.props.handleModal(this.props.keyword)}
+          onClick={() => this.props.handleModal(this.props.title)}
         />
         <p>{this.props.description}</p>
       </div>

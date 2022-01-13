@@ -18,19 +18,19 @@ class App extends React.Component {
   }
 
   handleModal = (name) => {
-    const subject = data.filter(e => e.keyword === name)[0];
+    const subject = data.filter(e => e.title === name)[0];
 
     this.setState({
       show: true,
       title: subject.title,
-      description: subject.description
+      description: subject.description,
+      pic: subject.image_url,
+      horns: subject.horns
     })
   }
 
   closeModal = () => {
-    this.setState({
-      show: false
-    })
+    this.setState({ show: false })
   }
 
   render(){
@@ -42,7 +42,9 @@ class App extends React.Component {
             <Modal.Title>{this.state.title}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
-            {this.state.description}
+            <img src={this.state.pic} alt={this.state.title}/>
+            <p>{this.state.description}</p>
+            <p>Horns: {this.state.horns}</p>
           </Modal.Body>
         </Modal>
         <Main
