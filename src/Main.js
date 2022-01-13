@@ -27,7 +27,7 @@ class Main extends React.Component {
             handleModal={this.props.handleModal}
           />
         )
-      }
+      } return null
     });
 
     return (
@@ -35,10 +35,9 @@ class Main extends React.Component {
         <Form style={{width:'360px', margin:'auto'}}>
           <Form.Group>
             <Form.Select onChange={this.handleFilter}>
-              <option value="0">Filter by number of horns</option>
-              <option value="0">One or more</option>                
-              <option value="1">2 or more</option>
-              <option value="2">More than 2</option>
+              <option value="0">One or more horns</option>                
+              <option value="1">2 or more  horns</option>
+              <option value="2">More than 2 horns</option>
             </Form.Select>          
           </Form.Group>
         </Form>
