@@ -2,11 +2,9 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 import Main from './Main';
-import Modal from 'react-bootstrap/Modal';
+import SelectedBeast from './SelectedBeast';
 import data from './data.json';
-
 import './App.css';
-
 
 class App extends React.Component {
   constructor(props) {
@@ -37,18 +35,12 @@ class App extends React.Component {
     return (
       <>
         <Header />
-        <Modal show={this.state.show} onHide={this.closeModal}>
-          <Modal.Header closeButton>
-            <Modal.Title>{this.state.title}</Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-            <img src={this.state.pic} alt={this.state.title}/>
-            <p>{this.state.description}</p>
-            <p>Horns: {this.state.horns}</p>
-          </Modal.Body>
-        </Modal>
+        <SelectedBeast
+          beast={this.state}
+          closeModal={this.closeModal}
+        />
         <Main
-          data={data}
+          data={data} 
           handleModal={this.handleModal}
         />
         <Footer />
