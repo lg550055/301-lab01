@@ -20,7 +20,7 @@ class HornedBeast extends React.Component{
         <h2 onClick={this.handleLike}>{this.props.title} -- 🤍  {this.state.likes}</h2>
         <img
           src={this.props.image_url}
-          alt={this.props.keyword}
+          alt={this.props.title}
           title={this.props.title}
           onClick={() => this.props.handleModal(this.props.title)}
         />
