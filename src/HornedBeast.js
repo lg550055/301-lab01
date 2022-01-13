@@ -28,8 +28,13 @@ class HornedBeast extends React.Component{
       // </Card>
 
       <div>
-        <h2>{this.props.title} -- 👋  {this.state.likes}</h2>
-        <img src={this.props.image_url} onClick={this.handleLike} alt={this.props.keyword} title={this.props.title}/>
+        <h2 onClick={this.handleLike}>{this.props.title} -- 🤍  {this.state.likes}</h2>
+        <img
+          src={this.props.image_url}
+          alt={this.props.keyword}
+          title={this.props.title}
+          onClick={() => this.props.handleModal(this.props.title)}
+        />
         <p>{this.props.description}</p>
       </div>
     );

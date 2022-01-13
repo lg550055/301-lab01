@@ -8,6 +8,10 @@ header {
   padding: 2vh 0;
 }
 
+.modal {
+  color: darkslategray;
+}
+
 main {
   max-width: 1200px;
   margin: 0 auto;
