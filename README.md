@@ -2,14 +2,19 @@
 
 Responsive React app that displays the title, image and description of Horned creatures.
 
-User may click on an image to like a creature.  Cummulative number of likes gets updated in state.
+User may filter creatures by number of horns.
+
+User may click an image to display a lightbox with the creature's information.
+
+User may click heart to like a creature.  Cummulative number of likes gets updated in state.
 
 ---
 
 ### Collaborators
 
-Polo Gonzalez - author
-Riva Davidowski - TA
+- Polo Gonzalez - author
+- Ryan Gallaway - instructor
+- Riva Davidowski - TA
 
 ---
 
